@@ -1,2 +1,2 @@
 # folio3
-Third iteration of portfolio
+Third iteration of my personal portfolio
