@@ -8,6 +8,9 @@ h1 + h4 { margin-top: 0; margin-bottom: 0.2em; }
 h4 + p { margin-top: 0; }
 h4 { font-variant: small-caps; font-size: 1.3em; margin-top: 0.5em; margin-bottom: 0.3em; }
 .project { margin-bottom: 0.8em; padding: 0.7em; background-color: #f0f0f0; border-radius: 5px; width: 50%; }
+.project-wide { width: 100%; max-width: 42em; }
 .project p { margin: 0.2em 0; }
+.project .capstone-reflection { margin-top: 0.6em; padding-top: 0.5em; border-top: 1px solid #ccc; }
+.project .capstone-reflection p { margin: 0.35em 0; }
 table { border-collapse: collapse; border: 2px solid black; }
 th, td { border: 1px solid black; padding: 0.2em 0.5em; }
