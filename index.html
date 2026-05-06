@@ -16,110 +16,120 @@
     <p align="center">Contact: <a href="mailto:mattcng9@uw.edu">E-Mail</a>, <a href="https://www.linkedin.com/in/mattcng/">LinkedIn</a>, <a href="https://github.com/fruitSalad266">GitHub</a></p>
     
     <hr></hr>
+    <div class="layout">
+        <aside class="sidebar">
+            <a href="#" class="sidebar-option active" onclick="showSection('home-section', this); return false;">Exordium</a>
+            <a href="#" class="sidebar-option" onclick="showSection('resume-section', this); return false;">Competencies</a>
+            <a href="#" class="sidebar-option" onclick="showSection('projects-section', this); return false;">Oeuvre</a>
+        </aside>
 
-    <p><img src="pic1.JPG" height="150" width="100" alt="Picture of Matthew Nguyen. He is very handsome."></p>
-    <h4>Introduction</h4>
-    <p>I am a double degree student at the <a href="https://www.washington.edu">University of Washington</a> and incoming MTS at <a href="https://etched.com">Etched</a>. </p>
-    <p>Previously I was at <a href="https://www.amazon.com">Amazon</a> as an SDE intern.
-        Before that I was a data analyst at <a href="https://www.washington.edu/research/compliance/">UW Research Compliance</a>.</p>
-    <p>In <a href="#projects">software</a> I am passionate about embedded systems and making <a href="https://en.wikipedia.org/wiki/Cardinal_utility">useful</a> things. Besides software I enjoy DJing, cooking, lifting, and razor clam fishing.</p>
-    
-    <h4 id="skills-title">Relevant Skills</h4>
-    <ul id="relevant-skills">
-        <li>Programming</li>
-        <li>Business (Marketing)</li>
-        <li>Great Communicator</li>
-    </ul>
-    <ul id="irrelevant-skills" style="display: none;">
-        <li>Manual Beatmatching</li>
-        <li>Taekwondo</li>
-        <li>Comedy</li>
-    </ul>
-    <button onclick="toggleSkills()">Show Irrelevant Skills</button>
+        <main class="content">
+            <section id="home-section" class="content-section active">
+                <p><img src="pic1.JPG" height="150" width="100" alt="Picture of Matthew Nguyen. He is very handsome."></p>
+                <h4>Introduction</h4>
+                <p>I am a double degree student at the <a href="https://www.washington.edu">University of Washington</a> and incoming MTS at <a href="https://etched.com">Etched</a>. </p>
+                <p>Previously I was at <a href="https://www.amazon.com">Amazon</a> as an SDE intern.
+                    Before that I was a data analyst at <a href="https://www.washington.edu/research/compliance/">UW Research Compliance</a>.</p>
+                <p>In <a href="#projects-section">software</a> I am passionate about embedded systems and making <a href="https://en.wikipedia.org/wiki/Cardinal_utility">useful</a> things. Besides software I enjoy DJing, cooking, lifting, and razor clam fishing.</p>
+                
+                <h4 id="skills-title">Relevant Skills</h4>
+                <ul id="relevant-skills">
+                    <li>Programming</li>
+                    <li>Business (Marketing)</li>
+                    <li>Great Communicator</li>
+                </ul>
+                <ul id="irrelevant-skills" style="display: none;">
+                    <li>Manual Beatmatching</li>
+                    <li>Taekwondo</li>
+                    <li>Comedy</li>
+                </ul>
+                <button id="skills-toggle-btn" onclick="toggleSkills()">Show Irrelevant Skills</button>
+            </section>
 
-    <script src="script.js"></script>
+            <section id="resume-section" class="content-section">
+                <h4>Resume</h4>
+                <p>Email me.</p>
 
-    <hr></hr>
+                <h4>Experience</h4>
+                <table>
+                    <tr>
+                        <th>Title</th>
+                        <th>Date</th>
+                        <th>Company</th>
+                    </tr>
+                    <tr>
+                        <td>SDE Intern</td>
+                        <td>2025</td>
+                        <td><a href="https://www.amazon.com">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>Dir. PR</td>
+                        <td>2024-2025</td>
+                        <td><a href="https://www.uwifc.com">UW IFC</a></td>
+                    </tr>
+                    <tr>
+                        <td>Project Manager</td>
+                        <td>2024-2025</td>
+                        <td><a href="https://montlakeconsulting.com">Montlake Consulting Group</a></td>
+                    </tr>
+                    <tr>
+                        <td>Data Analyst</td>
+                        <td>2023-2024</td>
+                        <td><a href="https://finance.uw.edu">UW Finance</a></td>
+                    </tr>
+                    <tr>
+                        <td>Consultant</td>
+                        <td>2023-2024</td>
+                        <td><a href="https://montlakeconsulting.com">Montlake Consulting Group</a></td>
+                    </tr>
+                </table>
 
-    <h4>Resume</h4>
-    <p>Email me.</p>
+                <h4>SAT</h4>
+                <p>1590</p>
+            </section>
 
-    <h4>Experience</h4>
-    <table>
-        <tr>
-            <th>Title</th>
-            <th>Date</th>
-            <th>Company</th>
-        </tr>
-        <tr>
-            <td>SDE Intern</td>
-            <td>2025</td>
-            <td><a href="https://www.amazon.com">Amazon</a></td>
-        </tr>
-        <tr>
-            <td>Dir. PR</td>
-            <td>2024-2025</td>
-            <td><a href="https://www.uwifc.com">UW IFC</a></td>
-        </tr>
-        <tr>
-            <td>Project Manager</td>
-            <td>2024-2025</td>
-            <td><a href="https://montlakeconsulting.com">Montlake Consulting Group</a></td>
-        </tr>
-        <tr>
-            <td>Data Analyst</td>
-            <td>2023-2024</td>
-            <td><a href="https://finance.uw.edu">UW Finance</a></td>
-        </tr>
-        <tr>
-            <td>Consultant</td>
-            <td>2023-2024</td>
-            <td><a href="https://montlakeconsulting.com">Montlake Consulting Group</a></td>
-        </tr>
-    </table>
+            <section id="projects-section" class="content-section">
+                <h4>Project Manifest</h4>
+                
+            <!--
+                <ul>
+                    <li>Snoflake Generator for Figma - TypeScript</li>
+                    <li>CHIP8 Emulator - C++</li>
+                    <li>2D Physics Engine - C++</li>
+                    <li>Sentiment-Analysis Trading Bot - Python</li>
+                </ul>
+                -->
+                <div class="project project-wide">
+                    <p><b>Wavelength</b> — <a href="https://github.com/fruitSalad266/wavelength">GitHub</a></p>
+                    <p>Event-based social media application, built on React Native (UW Capstone).</p>
+                    <div class="capstone-reflection">
+                        <p><b>Capstone reflection</b></p>
+                        <p><b>Goals</b> — <i>Team: </i> Ship a usable event-based social app with core flows. More broadly, we wanted to solve the problem of declining socialization among Gen Z, and we decided to start with UW students to keep our scope realistic. </p>
+                        <p><i>Individual: </i> Personally I wanted to develop and release a real application on the App Store before graduating college. I wanted to learn about the process and everything involved with creating an app.</p>
+                        <p><b>Process</b> — <i>Team :</i> We ran weekly sprints to suggest new features and update each other on where we were progressing on this project.</p>
+                        <p><i>Individual</i> I led the front-end design and created the overall design style and principles. I also helped to set up the back end.</p>
+                        <p><b>Takeaways</b> — <i>Team :</i> What worked well was our weekly sprints and our ability to iterate on the product quickly. What did not work well was our development process and the fragmentation between git branches.</p>
+                        <p><i>Individual :</i> I learned how to use React Native and Supabase to build a real application. I also learned how to design a mobile application, which is different from my web experience.</p>
+                        <p><b>Next steps</b> — Shipping improvements, tests, performance, TestFlight limited beta testing, App Store release</p>
+                    </div>
+                </div>
 
-    <h4>SAT</h4>
-    <p>1590</p>
-    
-    <hr></hr>
-    <h4 id="projects">Project Sampling</h4>
-    
-<!--
-    <ul>
-        <li>Snoflake Generator for Figma - TypeScript</li>
-        <li>CHIP8 Emulator - C++</li>
-        <li>2D Physics Engine - C++</li>
-        <li>Sentiment-Analysis Trading Bot - Python</li>
-    </ul>
-    -->
-    <div class="project project-wide">
-        <p><b>Wavelength</b> — <a href="https://github.com/fruitSalad266/wavelength">GitHub</a></p>
-        <p>Event-based social media application, built on React Native (UW Capstone).</p>
-        <div class="capstone-reflection">
-            <p><b>Capstone reflection</b></p>
-            <p><b>Goals</b> — <i>Team: </i> Ship a usable event-based social app with core flows. More broadly, we wanted to solve the problem of declining socialization among Gen Z, and we decided to start with UW students to keep our scope realistic. </p>
-            <p><i>Individual: </i> Personally I wanted to develop and release a real application on the App Store before graduating college. I wanted to learn about the process and everything involved with creating an app.</p>
-            <p><b>Process</b> — <i>Team :</i> We ran weekly sprints to suggest new features and update each other on where we were progressing on this project.</p>
-            <p><i>Individual</i> I led the front-end design and created the overall design style and principles. I also helped to set up the back end.</p>
-            <p><b>Takeaways</b> — <i>Team :</i> What worked well was our weekly sprints and our ability to iterate on the product quickly. What did not work well was our development process and the fragmentation between git branches.</p>
-            <p><i>Individual :</i> I learned how to use React Native and Supabase to build a real application. I also learned how to design a mobile application, which is different from my web experience.</p>
-            <p><b>Next steps</b> — Shipping improvements, tests, performance, TestFlight limited beta testing, App Store release</p>
-        </div>
-    </div>
+                <div class="project">
+                    <p><b>CHIP8 Emulator</b> — <a href="https://github.com/fruitSalad266/chip8">GitHub</a></p>
+                    <p>(Interpreter) built in C++ that can run original CHIP8 binaries/ROMs.</p>
+                </div>
 
-    <div class="project">
-        <p><b>CHIP8 Emulator</b> — <a href="https://github.com/fruitSalad266/chip8">GitHub</a></p>
-        <p>(Interpreter) built in C++ that can run original CHIP8 binaries/ROMs.</p>
-    </div>
+                <div class="project">
+                    <p><b>Snowflake Figma Plugin</b> — <a href="https://github.com/fruitSalad266/snowflake1">GitHub</a></p>
+                    <p>Figma plugin built in TypeScript that generates customizable snowflake graphics.</p>
+                </div>
 
-    <div class="project">
-        <p><b>Snowflake Figma Plugin</b> — <a href="https://github.com/fruitSalad266/snowflake1">GitHub</a></p>
-        <p>Figma plugin built in TypeScript that generates customizable snowflake graphics.</p>
-    </div>
-
-    <div class="project">
-        <p><b>2D Physics Engine</b> — <a href="https://github.com/fruitSalad266/physics">GitHub</a></p>
-        <p>2D physics engine built in C++.</p>
+                <div class="project">
+                    <p><b>2D Physics Engine</b> — <a href="https://github.com/fruitSalad266/physics">GitHub</a></p>
+                    <p>2D physics engine built in C++.</p>
+                </div>
+            </section>
+        </main>
     </div>
 
     <hr></hr>
@@ -129,5 +139,6 @@
     
     <hr></hr>
     <p style="font-size: 0.8em;">Copyright 2026 Matthew Nguyen | <a href="#top">back to top</a></p>
+    <script src="script.js"></script>
 </body>
 </html>
